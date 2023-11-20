@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="photo-box">
+            
+            <div class="overlay">
+               <p>
+                Name:<span id="title"></span>
+               </p>
+               <p>
+                Location: <span id="location"></span>
+               </p>
+               <p class="desc">
+                Description: <span id="descript"></span>
+               </p>
+
+            </div>
+            <a href="" target="_blank" id="links" class="overlay-btn">Visit</a>
+            <img id="image" src="image\p1.jpeg" alt="">
+
+        </div>
+
+
+        <div class="btn-container">
+            <button id="btn1" onclick="switchimage(1)">image 1</button>
+            <button id="btn2" onclick="switchimage(2)">image 2</button>
+            <button id="btn3" onclick="switchimage(3)">image 3</button>
+            <button id="btn4" onclick="switchimage(4)">image 4</button>
+            <button id="btn5" onclick="switchimage(5)">image 5</button>
+            <button id="btn6" onclick="switchimage(6)">image 6</button>
+            <button id="btn7" onclick="switchimage(7)">image 7</button>
+        </div>
+
+        <button id="toogler" ondblclick="toogleimage()">show image</button>
+
+
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

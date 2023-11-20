@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+section{
+    width:100% ;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+} 
+.photo-box{
+    width: 50%;
+    height: 50vh;
+    border-radius: 30px;
+    border: 3px solid #0b2d39;
+    object-fit: cover;
+    position: relative;
+
+}
+.photo-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+.photo-box:hover .overlay{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.photo-box:hover .desc{
+    display: block;
+}
+button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color:#1dc585;
+    color: white;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.btn-container button.active{
+    background-color: #57777d;
+    
+
+}
+.overlay-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 18px;
+    
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 12px;
+    transition: all  1s ease-in-out;
+}
+.desc{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .photo-box{
+        width: 80%;
+        height: 60vh;
+    }
+    .btn-container{
+        width: 70%;
+        flex-wrap: wrap;
+
+    }
+    .btn-container button{
+        height: 30px;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .photo-box{
+        height: 45vh;
+    }
+    
+}
